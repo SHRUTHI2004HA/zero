@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Donation Portal</h1>
+    </header>
+    <main>
+        <section id="donate-form">
+            <h2>Donate Food</h2>
+            <form id="foodDonationForm">
+                <label for="donorName">Name:</label>
+                <input type="text" id="donorName" name="donorName" required>
+                
+                <label for="donorEmail">Email:</label>
+                <input type="email" id="donorEmail" name="donorEmail" required>
+                
+                <label for="foodType">Type of Food:</label>
+                <input type="text" id="foodType" name="foodType" required>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                
+                <button type="submit">Submit Donation</button>
+            </form>
+        </section>
+        <section id="donation-info">
+            <h2>Donations</h2>
+            <ul id="donationList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Food Donation Portal. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
